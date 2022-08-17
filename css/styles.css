@@ -1,0 +1,103 @@
+:root {
+    -Backgroundcolor: #e5e5e5;
+    -Fontcolor: #212121;
+    -Differentcolor: #2196f3;}
+    .body {
+        background-color: var(-Backgroundcolor);
+        color: var(-Fontcolor);
+        font-family: "Roboto", sans-serif;
+    }    
+    .logo {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #2196f3;
+        text-decoration: none;
+    }
+.logo-recolor-footer { color: #fff;}
+.links {
+        text-decoration: none;
+        color: var(-Fontcolor);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+.links:hover {color: var(-Differentcolor);}
+.links-current-highlight {color: var(-Differentcolor);}
+.links-kontakt {color: #757575;}
+.links-kontakt-footer {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+}
+.footer-back {
+    background: #2f303a;
+}
+.address {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.button {
+    background: #f5f4fa;
+    color: var(-Fontcolor);
+}
+.button.hover {
+    background: var(-Differentcolor);
+    color: #ffffff;
+    cursor: pointer;
+}
+.button-order:hover {
+    background: #f5f4fa;
+    color: var(-Fontcolor);
+    cursor: pointer;
+}
+.heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2f303a;
+}
+.second-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.paragraph-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(-Fontcolor);
+}
+.text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.person-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+.person-position {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
