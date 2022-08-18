@@ -1,6 +1,6 @@
 :root {
 -BackgroundcolorFirst: #e5e5e5;
--BackgroundcoloSecond: #2f303a;
+-BackgroundcolorSecond: #2f303a;
 -FontcolorFirst: #212121;
 -FontcolorSecond:  #757575;
 -Button: #00000026;
@@ -25,6 +25,8 @@
         text-decoration: none;
         color: var(Differentcolor);
     }
+.list-style {text-transform: none;}    
+.logo-recolor-header {color: var(-FontcolorFirst)}
 .logo-recolor-footer { color: var(Colorwhite);}
 .links {
         text-decoration: none;
@@ -47,18 +49,26 @@
     color: var(-Differentcolor);
 }
 .footer-back {
-    background: var(-BackgroundSecond);
+    background: var(-BackgroundcolorSecond);
 }
 .address {
-    font-style: normal
-    font-size: 14px;
-    line-height: 1.71px;
+    font-weight: 400;
+    font-size: 14px
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(-Colorwhite);
 }
-.button {
+.button-portfolio {
     background: var(-Colornotwhite);
     color: var(-FontcolorFirst);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.button {
+    background: var(-Colornotwhite) ;
+    color: var(-FontcolorFirst)
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -81,6 +91,14 @@
     text-transform: uppercase;
     color: var(-FontcolorFirst);
 }
+.third-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 00.03em;
+}
 .second-heading {
     font-family: "Roboto";
     font-weight: 700;
@@ -95,8 +113,9 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(-Colorwhite);
-    background: var(-BackgroundcoloSecond);
+    background: var(-BackgroundcolorSecond);
 }
 .text {
     font-size: 14px;
@@ -109,10 +128,26 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    color: var(-FontcolorFirst)
 }
 .person-position {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(-FontcolorSecond);
+}
+.heading-portfolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(-FontcolorFirst)
+}
+.text-signature {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(-FontcolorSecond)
 }
