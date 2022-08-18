@@ -1,103 +1,118 @@
 :root {
-    -Backgroundcolor: #e5e5e5;
-    -Fontcolor: #212121;
-    -Differentcolor: #2196f3;}
+-BackgroundcolorFirst: #e5e5e5;
+-BackgroundcoloSecond: #2f303a;
+-FontcolorFirst: #212121;
+-FontcolorSecond:  #757575;
+-Button: #00000026;
+-Differentcolor: #2196f3;
+-Colorshadow: #ffffff99;
+-Colorwhite: #ffffff;
+-Colornotwhite: #f5f4fa; 
+
+}
     .body {
-        background-color: var(-Backgroundcolor);
-        color: var(-Fontcolor);
-        font-family: "Roboto", sans-serif;
+        background-color: var(-BackgroundcolorFirst);
+        color: var(-FontcolorFirst);
+        font-family: "Roboto","Raleway", sans-serif;
     }    
     .logo {
         font-family: "Raleway";
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.38;
         letter-spacing: 0.03em;
         color: #2196f3;
         text-decoration: none;
+        color: var(Differentcolor);
     }
-.logo-recolor-footer { color: #fff;}
+.logo-recolor-footer { color: var(Colorwhite);}
 .links {
         text-decoration: none;
-        color: var(-Fontcolor);
+        color: var(-FontcolorFirst);
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.38;
         letter-spacing: 0.02em;
     }
 .links:hover {color: var(-Differentcolor);}
+.links:focus {color: var(-Differentcolor)}
 .links-current-highlight {color: var(-Differentcolor);}
-.links-kontakt {color: #757575;}
-.links-kontakt-footer {
+.links-contact {color: (-FontcolorSecond);}
+.links-contact:focus {color: var(-Differentcolor);}
+.links-contact-footer {
     font-size: 14px;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #ffffff99;
+    color: var(-Differentcolor);
 }
 .footer-back {
-    background: #2f303a;
+    background: var(-BackgroundSecond);
 }
 .address {
+    font-style: normal
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(-Colorwhite);
 }
 .button {
-    background: #f5f4fa;
-    color: var(-Fontcolor);
+    background: var(-Colornotwhite);
+    color: var(-FontcolorFirst);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
 }
 .button.hover {
     background: var(-Differentcolor);
-    color: #ffffff;
+    color: var(-Colorwhite);
     cursor: pointer;
 }
-.button-order:hover {
-    background: #f5f4fa;
-    color: var(-Fontcolor);
-    cursor: pointer;
+.button-order {
+    color: var(-colorwhite);
+    background: var(-Differentcolor);
 }
 .heading {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
-    background: #2f303a;
-}
-.second-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.paragraph-header {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(-Fontcolor);
+    color: var(-FontcolorFirst);
+}
+.second-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.first-heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(-Colorwhite);
+    background: var(-BackgroundcoloSecond);
 }
 .text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(-FontcolorSecond);
 }
 .person-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
 }
 .person-position {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(-FontcolorSecond);
 }
