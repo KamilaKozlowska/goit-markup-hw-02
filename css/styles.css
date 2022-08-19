@@ -1,18 +1,17 @@
 :root {
--BackgroundcolorFirst: #e5e5e5;
--BackgroundcolorSecond: #2f303a;
--FontcolorFirst: #212121;
--FontcolorSecond:  #757575;
--Button: #00000026;
--Differentcolor: #2196f3;
--Colorshadow: #ffffff99;
--Colorwhite: #ffffff;
--Colornotwhite: #f5f4fa; 
+--backgroundColorFirst: #e5e5e5;
+--backgroundColorSecond: #2f303a;
+--fontColorFirst: #212121;
+--fontColorSecond:  #757575;
+--button: #00000026;
+--colorBlue: #2196f3;
+--colorShadow: #ffffff99;
+--colorWhite: #ffffff;
+--colorDarkWhite: #f5f4fa; 
 
 }
     .body {
-        background-color: var(-BackgroundcolorFirst);
-        color: var(-FontcolorFirst);
+        color: var(--fontColorFirst);
         font-family: "Roboto","Raleway", sans-serif;
     }    
     .logo {
@@ -23,60 +22,64 @@
         letter-spacing: 0.03em;
         color: #2196f3;
         text-decoration: none;
-        color: var(Differentcolor);
+        color: var(--colorBlue);
     }
-.list-style {text-transform: none;}    
-.logo-recolor-header {color: var(-FontcolorFirst)}
-.logo-recolor-footer { color: var(Colorwhite);}
+.dots {list-style: none;}    
+.logo-recolor-header {color: var(--fontColorFirst)}
+.logo-recolor-footer { color: var(--colorWhite);}
 .links {
         text-decoration: none;
-        color: var(-FontcolorFirst);
+        color: var(--fontColorFirst);
         font-weight: 500;
         font-size: 14px;
         line-height: 1.38;
         letter-spacing: 0.02em;
     }
-.links:hover {color: var(-Differentcolor);}
-.links:focus {color: var(-Differentcolor)}
-.links-current-highlight {color: var(-Differentcolor);}
-.links-contact {color: (-FontcolorSecond);}
-.links-contact:focus {color: var(-Differentcolor);}
+.links:hover {color: var(--colorBlue);}
+.links:focus {color: var(--colorBlue)}
+.links-contact-email {color: (var(--colorBlue));}
+.links-contact-tel {color: var(--fontColorSecond);}
+.links-contact:focus {color: var(--colorBlue);}
 .links-contact-footer {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(-Differentcolor);
+    color: var(--colorBlue);
 }
-.footer-back {
-    background: var(-BackgroundcolorSecond);
+.back-footer {
+    background: var(--backgroundColorSecond);
+}
+.back-section-second {
+    background-color: var(--colorDarkWhite);
 }
 .address {
+    font-style: normal;
     font-weight: 400;
-    font-size: 14px
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(-Colorwhite);
+    color: var(--colorWhite);
 }
 .button-portfolio {
-    background: var(-Colornotwhite);
-    color: var(-FontcolorFirst);
+    background: var(--colorDarkwhite);
+    color: var(--fontColorFirst);
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 }
 .button {
-    background: var(-Colornotwhite) ;
-    color: var(-FontcolorFirst)
+    background: var(--colorDarkwhite) ;
+    color: var(--fontColorFirst)
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
     line-height: 1.62;
 }
 .button.hover {
-    background: var(-Differentcolor);
-    color: var(-Colorwhite);
+    background: var(--colorBlue);
+    color: var(--colorWhite);
     cursor: pointer;
 }
 .button-order {
@@ -86,8 +89,8 @@
     letter-spacing: 00.06em;
     text-align: center;
     align-items: center;
-    color: var(-colorwhite);
-    background: var(-Differentcolor);
+    color: var(--colorWhite);
+    background: var(--colorBlue);
 }
 .heading {
     font-weight: 700;
@@ -95,7 +98,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(-FontcolorFirst);
+    color: var(--fontColorFirst);
 }
 .third-heading {
     font-family: "Roboto";
@@ -120,40 +123,39 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    color: var(-Colorwhite);
-    background: var(-BackgroundcolorSecond);
+    color: var(--colorWhite);
+    background-color: var(--backgroundColorSecond);
 }
 .text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(-FontcolorSecond);
+    color: var(--fontColorSecond);
 }
 .person-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: var(-FontcolorFirst)
+    color: var(--fontColorFirst)
 }
 .person-position {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: var(-FontcolorSecond);
+    color: var(--fontColorSecond);
 }
 .heading-portfolio {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(-FontcolorFirst)
+    color: var(--fontColorFirst)
 }
 .text-signature {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: var(-FontcolorSecond)
+    color: var(--fontColorSecond)
 }
