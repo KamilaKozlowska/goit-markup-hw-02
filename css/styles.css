@@ -35,9 +35,9 @@
         line-height: 1.38;
         letter-spacing: 0.02em;
     }
-.links:hover {color: var(--colorBlue);}
-.links:focus {color: var(--colorBlue)}
-.links-contact-email {color: (var(--colorBlue));}
+.links:hover, 
+.links:focus {color: var(--colorBlue);}
+.links-contact-email {color: var(--colorBlue);}
 .links-contact-tel {color: var(--fontColorSecond);}
 .links-contact:focus {color: var(--colorBlue);}
 .links-contact-footer {
@@ -71,7 +71,7 @@
 }
 .button {
     background: var(--colorDarkwhite) ;
-    color: var(--fontColorFirst)
+    color: var(--fontColorFirst);
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
