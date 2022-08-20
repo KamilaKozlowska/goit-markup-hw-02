@@ -54,7 +54,7 @@ color: var(--fontColorFirst)}
 .back-footer {
     background: var(--backgroundColorSecond);
 }
-.back-section.first {
+.back-section-first {
     background-color: var(--backgroundColorSecond);
 }
 .back-section-second {
@@ -75,6 +75,9 @@ color: var(--fontColorFirst)}
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+}
+.portfolio-link:hover {
+    background-color: var(--colorBlue);
 }
 .button {
     background: var(--colorDarkwhite) ;
