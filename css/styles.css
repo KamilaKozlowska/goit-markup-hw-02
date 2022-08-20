@@ -27,16 +27,20 @@
 .dots {list-style: none;}    
 .logo-recolor-header {color: var(--fontColorFirst)}
 .logo-recolor-footer { color: var(--colorWhite);}
-.links {
-        text-decoration: none;
-        color: var(--fontColorFirst);
+.navigation {
+        font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.38;
+        line-height: 1.15;
         letter-spacing: 0.02em;
     }
-.links:hover, 
-.links:focus {color: var(--colorBlue);}
+.navigation .link:hover, 
+.navigation .link:focus {color: var(--colorBlue);
+outline-color: var(--colorBlue);}
+.navigation.link {text-decoration: none;
+color: var(--fontColorFirst)}
+.navigation .current {color: var(--colorBlue)}
+
 .links-contact-email {color: var(--colorBlue);}
 .links-contact-tel {color: var(--fontColorSecond);}
 .links-contact:focus {color: var(--colorBlue);}
@@ -49,6 +53,9 @@
 }
 .back-footer {
     background: var(--backgroundColorSecond);
+}
+.back-section.first {
+    background-color: var(--backgroundColorSecond);
 }
 .back-section-second {
     background-color: var(--colorDarkWhite);
@@ -76,6 +83,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.62;
+    text-align: center;
 }
 .button.hover {
     background: var(--colorBlue);
