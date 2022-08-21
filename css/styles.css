@@ -37,7 +37,7 @@
 .navigation .link:hover, 
 .navigation .link:focus {color: var(--colorBlue);
 outline-color: var(--colorBlue);}
-.navigation.link {text-decoration: none;
+.navigation .link {text-decoration: none;
 color: var(--fontColorFirst)}
 .navigation .current {color: var(--colorBlue)}
 
