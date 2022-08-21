@@ -24,7 +24,7 @@
         text-decoration: none;
         color: var(--colorBlue);
     }
-.dots {list-style: none;}    
+.list {list-style: none;}    
 .logo-recolor-header {color: var(--fontColorFirst)}
 .logo-recolor-footer { color: var(--colorWhite);}
 .navigation {
@@ -41,18 +41,36 @@ outline-color: var(--colorBlue);}
 color: var(--fontColorFirst)}
 .navigation .current {color: var(--colorBlue)}
 
-.links-contact-email {color: var(--colorBlue);}
-.links-contact-tel {color: var(--fontColorSecond);}
-.links-contact:focus {color: var(--colorBlue);}
-.links-contact-footer {
+.links-contact {
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+.links-contact .link {
+color: var(--fontColorSecond);
+text-decoration: none; 
+}    
+.links-contact .link:focus,
+.links-contact .link:hover {
+    color: var(--colorBlue);}
+.back-footer {
+    color: var(--colorWhite);
     font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--colorBlue);
+    background-color: var(--backgroundColorSecond);
 }
-.back-footer {
-    background: var(--backgroundColorSecond);
+.back-footer .link {
+    text-decoration: none;
+    color: var(--fontColorSecond);
+}
+.back-footer .link:focus,
+.back-footer .link:hover {
+    color: var(--colorBlue);
 }
 .back-section-first {
     background-color: var(--backgroundColorSecond);
@@ -138,6 +156,8 @@ color: var(--fontColorFirst)}
     background-color: var(--backgroundColorSecond);
 }
 .text {
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
