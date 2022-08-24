@@ -8,12 +8,15 @@
 --colorShadow: #ffffff99;
 --colorWhite: #ffffff;
 --colorDarkWhite: #f5f4fa; 
-
 }
+/*body style*/
     .body {
         color: var(--fontColorFirst);
         font-family: "Roboto","Raleway", sans-serif;
-    }    
+    } 
+    .list {list-style: none;}
+    /*body end*/
+    /*logo*/  
     .logo {
         font-family: "Raleway";
         font-weight: 700;
@@ -22,10 +25,10 @@
         letter-spacing: 0.03em;
         text-decoration: none;
         color: var(--colorBlue);
-    }
-.list {list-style: none;}    
+    }   
 .logo-recolor-header {color: var(--fontColorFirst)}
-.logo-recolor-footer { color: var(--colorWhite);}
+/*loge end*/
+/*navigation*/
 .navigation {
         font-style: normal;
         font-weight: 500;
@@ -39,7 +42,8 @@ outline-color: var(--colorBlue);}
 .navigation .link {text-decoration: none;
 color: var(--fontColorFirst)}
 .navigation .current {color: var(--colorBlue)}
-
+/*navigation end*/
+/*contact*/
 .links-contact {
     font-style: normal;
     font-weight: 500;
@@ -54,97 +58,10 @@ text-decoration: none;
 .links-contact .link:focus,
 .links-contact .link:hover {
     color: var(--colorBlue);}
-.back-footer {
-    color: var(--colorWhite);
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    background-color: var(--backgroundColorSecond);
-}
-.back-footer .link {
-    text-decoration: none;
-    color: var(--fontColorSecond);
-}
-.back-footer .link:focus,
-.back-footer .link:hover {
-    color: var(--colorBlue);
-}
+    /*contact end*/
+/*efektywne rozwiazania glowny naglowek*/
 .back-section-first {
     background-color: var(--backgroundColorSecond);
-}
-.back-section-second {
-    background-color: var(--colorDarkWhite);
-}
-.address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--colorWhite);
-}
-.button-portfolio {
-    background: var(--colorDarkwhite);
-    color: var(--fontColorFirst);
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    cursor: pointer;
-}
-.portfolio-link:hover {
-    background-color: var(--colorBlue);
-}
-.button {
-    background: var(--colorDarkwhite) ;
-    color: var(--fontColorFirst);
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-}
-.button.hover {
-    background: var(--colorBlue);
-    color: var(--colorWhite);
-    cursor: pointer;
-}
-.button-order {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 00.06em;
-    text-align: center;
-    align-items: center;
-    color: var(--colorWhite);
-    background: var(--colorBlue);
-    cursor: pointer;
-}
-.heading {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--fontColorFirst);
-}
-.third-heading {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 00.03em;
-}
-.second-heading {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
 }
 .first-heading {
     font-weight: 900;
@@ -156,6 +73,14 @@ text-decoration: none;
     color: var(--colorWhite);
     background-color: var(--backgroundColorSecond);
 }
+.heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fontColorFirst);
+}
 .text {
     font-style: normal;
     font-weight: 400;
@@ -163,6 +88,51 @@ text-decoration: none;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--fontColorSecond);
+}
+.button {
+    background: var(--colorDarkwhite) ;
+    color: var(--fontColorFirst);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.button-order {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 00.06em;
+    text-align: center;
+    align-items: center;
+    color: var(--colorWhite);
+    background: var(--colorBlue);
+    cursor: pointer;}
+.button.hover {
+    background: var(--colorBlue);
+    color: var(--colorWhite);
+    cursor: pointer;
+    }
+    /* efektywne rozwiazania end*/
+    /* czym sie zajmujemy*/
+.second-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+.back-section-second {
+    background-color: var(--colorDarkWhite);
+}
+.third-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 00.03em;
 }
 .person-name {
     font-weight: 500;
@@ -177,6 +147,36 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--fontColorSecond);
 }
+/* czym sie zajmujemy end */
+/* footer*/
+.back-footer {
+    color: var(--colorWhite);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--backgroundColorSecond);
+}
+.logo-recolor-footer { color: var(--colorWhite);}
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--colorWhite);
+}
+.back-footer .link {
+    text-decoration: none;
+    color: var(--fontColorSecond);
+}
+.back-footer .link:focus,
+.back-footer .link:hover {
+    color: var(--colorBlue);
+}
+/*footer end*/
+/*portfolio*/
 .heading-portfolio {
     font-weight: 700;
     font-size: 18px;
@@ -191,3 +191,15 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--fontColorSecond)
 }
+.button-portfolio {
+    background: var(--colorDarkwhite);
+    color: var(--fontColorFirst);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    }
+.portfolio-link:hover {
+    background-color: var(--colorBlue);
+    }
